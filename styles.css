@@ -1,0 +1,683 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  max-width:100%;
+  max-height:100% ;
+  cursor:crosshair;
+}
+.tesla-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  margin: 0px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  font-family: 'Helvetica Neue', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 55px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  height:95px;
+  width:105px;
+padding-left: 20px;
+}
+
+.divider {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10%;
+  padding: 10px;
+}
+.link:hover {
+      background-color: #DCDCDC;
+  transition: all 1s;
+
+}
+
+.header-center {
+  display: flex;
+  gap: 50px;
+}
+
+.header-center a {
+  padding: 5px;
+  border-radius: 10%;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  gap: 90px;
+  font-weight: 400;
+}
+.header-center a:hover {
+  background-color: #DCDCDC;
+  transition: all 1s;
+}
+
+.header-right {
+  display: flex;
+  gap: 16px;
+  padding-top: 30px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius:10%;
+}
+.icon-btn:hover {
+   background-color: #DCDCDC;
+  transition: all 1s;
+}
+h1 {
+  padding-left: 37px;
+  top: 20px;
+  position: sticky;
+ z-index: 10;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+}
+.h3oneblock {
+  padding-left: 36px;
+  padding-top: 28px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+.bestsellers {
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
+.hoverimg1 {
+  position: absolute;
+    top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.img-wrapper:hover .hoverimg1 {
+  opacity: 1;
+  
+}
+.imgsize {
+  height: 350px;
+  width: auto;
+}
+.opisanie {
+  display: flex;
+  flex-direction: column;
+}
+.opisanie a:hover {
+  color: #FF4500;
+  cursor: pointer;
+}
+a {
+  padding-top: 5px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  text-decoration: none;
+  color: black;
+}
+.floormats{
+display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.h3twoblock {
+  padding-left: 36px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-top: 75px;
+}
+span {
+  font-family:sans-serif;
+  font-size:14px;
+  font-weight: 600;
+  color: 	#4a4a4a;
+}
+.floormatstwo {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.floormatsthree {
+  padding-top: 60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.h3threeblock {
+  padding-left: 36px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-top: 75px;
+}
+.interior {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.interiortwo {
+  padding-top: 60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.interiorthree {
+  padding-top:60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.exterior {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.exteriortwo {
+  padding-top: 60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.h3fourblock {
+  padding-left: 36px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-top: 75px;
+}
+.h3fiveblock {
+  padding-left: 36px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-top: 75px;
+}
+.tires {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.tirestwo {
+  padding-top: 60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.tiresthree {
+  padding-top:60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.tiresfour {
+  padding-top:60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.tiresfive {
+  padding-top:60px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  padding-left:40px;
+}
+.h3sixblock {
+  padding-left: 36px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-top: 75px;
+}
+.parts {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.partstwo {
+  padding-top: 60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.keys {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.h3sevenblock {
+  padding-left: 36px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-top: 75px;
+}
+.footer {
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 25px;
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
+.footer a {
+  color: darkgrey;
+  font-size:11px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+/* === Общие стили (твои текущие) === */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tesla-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  margin: 0px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  font-family: 'Helvetica Neue', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 55px;
+}
+
+.header-left, .header-center, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  gap: 25px;
+}
+
+.header-center {
+  gap: 50px;
+}
+
+.header-right {
+  gap: 16px;
+}
+
+.logo {
+  height: 95px;
+  width: 105px;
+  padding-left: 20px;
+}
+
+/* Карточки и блоки с товарами */
+.bestsellers, .floormats, .floormatstwo, .floormatsthree,
+.interior, .interiortwo, .interiorthree,
+.exterior, .exteriortwo,
+.tires, .tirestwo, .tiresthree, .tiresfour, .tiresfive,
+.parts, .partstwo, .keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+  padding-top: 60px;
+}
+
+/* Заголовки блоков */
+.h3oneblock, .h3twoblock, .h3threeblock, .h3fourblock, 
+.h3fiveblock, .h3sixblock, .h3sevenblock {
+  padding-left: 36px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-top: 75px;
+}
+
+/* Изображения и описание */
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.img-wrapper img {
+      display: block;
+    width: 83%;
+    height: auto;
+    padding: 20px;
+}
+
+.hoverimg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.img-wrapper:hover .hoverimg1 {
+  opacity: 1;
+}
+
+.imgsize {
+  height: 350px;
+  width: auto;
+}
+
+.opisanie {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.opisanie a:hover {
+  color: #FF4500;
+  cursor: pointer;
+}
+
+a {
+  padding-top: 5px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  text-decoration: none;
+  color: black;
+}
+
+span {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+/* Подвал */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
+
+.footer a {
+  color: darkgrey;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+/* --- Конец общих стилей --- */
+
+/* === Адаптивность === */
+
+/* Мета-тег viewport должен быть в <head> твоего HTML:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*/
+
+/* Для планшетов (до 900px) */
+@media (max-width: 900px) {
+  .tesla-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .header-left, .header-center, .header-right {
+    /* justify-content: center; */
+    gap: 15px;
+  }
+
+  .logo {
+    height: 60px;
+    width: 70px;
+    padding-left: 0;
+  }
+
+  .bestsellers, .floormats, .floormatstwo, .floormatsthree,
+  .interior, .interiortwo, .interiorthree,
+  .exterior, .exteriortwo,
+  .tires, .tirestwo, .tiresthree, .tiresfour, .tiresfive,
+  .parts, .partstwo, .keys {
+    gap: 30px;
+    padding-top: 40px;
+  }
+
+  /* Уменьшаем количество карточек в ряду */
+  .bestsellers, .floormats, .floormatstwo, .floormatsthree,
+  .interior, .interiortwo, .interiorthree,
+  .exterior, .exteriortwo,
+  .tires, .tirestwo, .tiresthree, .tiresfour, .tiresfive,
+  .parts, .partstwo, .keys {
+    justify-content: space-around;
+  }
+
+  /* Изображения и карточки уменьшаем */
+  .img-wrapper {
+    max-width: 280px;
+  }
+
+  .imgsize {
+    height: 280px;
+  }
+
+  .h3oneblock, .h3twoblock, .h3threeblock, .h3fourblock, 
+  .h3fiveblock, .h3sixblock, .h3sevenblock {
+    padding-left: 20px;
+    font-size: 18px;
+    padding-top: 50px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 13px;
+  }
+}
+
+/* Для мобильных телефонов (до 600px) */
+@media (max-width: 600px) {
+  .tesla-header {
+           flex-direction: column;
+        height: 46px;
+        padding: 25px 105px;
+        gap: 10px;
+  }
+
+  .header-left, .header-center, .header-right {
+    /* justify-content: center; */
+    gap: 10px;
+  }
+
+  .logo {
+    height: 50px;
+    width: 100px;
+    padding-left: 0;
+  }
+
+  /* Все блоки карточек — одна карточка в ряд */
+  .bestsellers, .floormats, .floormatstwo, .floormatsthree,
+  .interior, .interiortwo, .interiorthree,
+  .exterior, .exteriortwo,
+  .tires, .tirestwo, .tiresthree, .tiresfour, .tiresfive,
+  .parts, .partstwo, .keys {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .img-wrapper {
+    max-width: 100%;
+  }
+
+  .imgsize {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .h3oneblock, .h3twoblock, .h3threeblock, .h3fourblock, 
+  .h3fiveblock, .h3sixblock, .h3sevenblock {
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 40px;
+  }
+
+  a {
+    font-size: 19px;
+  }
+
+  span {
+    font-size: 15px;
+  }
+  
+  /* Уменьшаем отступы заголовков и текста для узких экранов */
+  h1 {
+    padding-left: 10px;
+    font-size: 22px;
+  }
+  
+  .opisanie {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* Скрываем кнопку бургера и мобильное меню на больших экранах */
+.burger-btn {
+  display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    /* padding: 60px; */
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  position: fixed;
+ top: 73px;
+    right: 17px;
+  width: 95px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 200;
+  padding: 10px;
+}
+
+.mobile-menu a {
+  padding: 5px 5px;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.mobile-menu a:hover {
+  background-color: #eee;
+}
+
+/* Показываем бургер и прячем стандартное меню на мобильных */
+@media (max-width: 600px) {
+  .header-center {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+}
+
